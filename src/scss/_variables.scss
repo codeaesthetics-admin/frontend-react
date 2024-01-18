@@ -1,0 +1,233 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+$white: #fff !default;
+$theme: #eff4f8 !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #ebebeb !default;
+$gray-400: #cfd2c4 !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #888888 !default;
+$gray-800: #9ea196 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// fusv-disable
+$grays: (
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900,
+) !default;
+// fusv-enable
+
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #fdb900 !default;
+$green: #77cb43 !default;
+$teal: #20c997 !default;
+$one: #7cbaa7 !default;
+$cyan: #0dcaf0 !default;
+$green-light: #41ad48 !default;
+$primarylinear: linear-gradient(180deg, #dda01a -18%, #fec83a 116%) !default;
+$goldenlinear: linear-gradient(
+  180deg,
+  #facb30 -18%,
+  #fef9c8 22.5%,
+  #c49530 67.84%,
+  #fff8c4 116%
+) !default;
+$silverlinear: linear-gradient(
+  143deg, #B1B1BB 0%, #FEFEFE 31.25%, #B3B3B4 60.94%, #D3D3D8 100%
+) !default;
+$golden: #cea64a;
+
+$social: #888888 !default;
+
+// scss-docs-start colors-map
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "one": $one,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+) !default;
+
+// scss-docs-end colors-map
+$primary: #f1b82e !default;
+$secondary: #e8ecdc !default;
+$warning: $yellow !default;
+$success: $green !default;
+$info: $cyan !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $black !default;
+$medium: $gray-800 !default;
+
+$site-font: Lao MN;
+// $site-font: 'Inter', sans-serif;
+$site-font-color: #000 !default;
+$section-gap: 50px 0;
+$section-gap-tb-lg: 40px 0;
+$section-gap-tb: 35px 0;
+$section-gap-mb: 25px 0;
+
+$page-background: $theme;
+$page-background-dark: #19233a;
+$page-background-secondary: #272e48;
+$light-sky-blue: #dbf1fc;
+
+$shadow-dark: rgba(68, 68, 68, 0.31) !default;
+$shadow-dark-50: rgba(154, 153, 153, 0.71) !default;
+$shadow-light: #a0b9d0 !default;
+$shadow-light-50: rgba(255, 255, 255, 0.7) !default;
+$shadow-drop: #ffffff !default;
+$shadow-drop-dark: #b7c7d7 !default;
+$shadow-drop-40: #aeaebb !default;
+$shadow-drop-50: #a0b9d0 !default;
+
+:root {
+  --primary-color: #{$primary};
+  --primary: #{$primary}; // main color or primary color of website and admin panel
+
+  --secondary-color: #{235, 235, 235};
+  --secondary: #{$black}; // secondary color for buttons
+  --warning: #{$warning};
+  --success: #{$green};
+  --info: #{$cyan};
+  --light: #{$light};
+  --dark: #{$dark};
+  --medium: #{$medium};
+
+  --text-body-color: #{0, 0, 0};
+  --text-color: #{$site-font-color};
+  --text-body: #{$site-font-color};
+  --text-dark: #{$site-font-color};
+  --text-dark-50: #{$site-font-color};
+  --text-body-secondary: #{$gray-600};
+  --text-body-secondary-light: #{$gray-300};
+  --text-body-secondary-extra-light: #{$gray-100};
+  --text-color-primary: #{$primary};
+  --bs-success: #{#77cb43};
+
+  --border-color: #{$gray-400};
+  --color-border: #{$gray-300};
+  --color-border-hover: #{$primary};
+
+  --bg-primary: #{$primary};
+  --bg-color-dark: #{$dark};
+  --bg-secondary: #{$secondary};
+  --bg-secondary-medium: #{$medium};
+  --bg-secondary-light: #{$light};
+  --bg-light: #{$light};
+  --bg-warning: #{$warning};
+  --bg-white-secondary: #{$secondary};
+  --bg-white-secondary-light: #{$page-background};
+
+  --page-background: #{$page-background};
+  --page-background-light: #{$light};
+  --page-background-secondary: #{$page-background};
+
+  --primary-gradient: #{$primary};
+  --bg-light-gray: #{#ededed};
+  --light-sky-blue: #{dbf1fc};
+
+  --star-size: 18px;
+  --star-color: #c2c1c1;
+  --star-background: #fc0;
+  --sticky-toolbar: #{#ffff};
+  --search-background: #{#ffff};
+  --border-color: #{$primary};
+  --pink-color: #{#ff6982};
+  --purple-color: #{#864656};
+  --bluish-black: #{#333939};
+  --blue-shade: #{#0473aa};
+  --border-gray: #{#d9d9d9};
+  --border-light: #{#eaeaea};
+  --mustard-color: #{#e4bd0c};
+  --sub-heading: #{#828282};
+  --footer-text: #{#797979};
+  --magenta-color: #{#c32f55};
+  --compare-icon: #{#27c0fd};
+  --social-gray: #{$social};
+
+  --shadow-dark: #{$shadow-dark};
+  --shadow-dark-50: #{$shadow-dark-50};
+  --shadow-light: #{$shadow-light};
+  --shadow-light-50: #{$shadow-light-50};
+  --bs-success: #{#77cb43};
+  --shodow-drop: #{$shadow-drop};
+  --shodow-drop-dark: #{$shadow-drop-dark};
+  --primarylinear: #{$primarylinear};
+  --goldenlinear: #{$goldenlinear};
+  --silverlinear: #{$silverlinear};
+  --golden: #{$golden};
+  --shodow-drop-50: #{$shadow-drop-50};
+  --shodow-drop-40: #{$shadow-drop-40};
+}
+.dark {
+  --primary: #{$primary}; // main color or primary color of website and admin panel
+  --secondary: #{$secondary}; // secondary color for buttons
+
+  --text-body: #{$white};
+  --text-body-secondary: #{rgb(204, 201, 201)};
+  --text-body-light: #{rgb(204, 201, 201)};
+  --text-dark: #{$white};
+  --color-border: #{#747678};
+
+  --border-secondary: #{#505050};
+  --bg-secondary: #{#272e48};
+  --page-background: #{#1c1c1c};
+  --color-section-bacground: #{#2d3957};
+  --page-background-light: #{#19233a26};
+  --color-article1-background: #{#222};
+  --color-article2-background: #{#2d2b2b};
+  --color-article3-background: #{$gray-900};
+  --color-article4-background: #{#222};
+  --color-article5-background: #{rgb(36, 34, 34)};
+  // --color-article-shadow: #{$color-gray-dark};
+
+  --table-striped-color: #{#4a505b};
+
+  --primary-gradient: #{$primary};
+  --bg-primary: #{$primary};
+
+  --shadow-dark: #{$shadow-dark};
+  --shadow-dark-50: #{$shadow-dark-50};
+  --shadow-light: #{rgb(0 0 0 / 80%)};
+  --shadow-light-50: #{rgb(46 44 44 / 99%)};
+  --shodow-drop: #{#2e2c2c};
+  --shodow-drop-dark: #{rgba(0, 0, 0, 0.68)};
+
+  --shodow-drop-50: #{rgb(0 0 0 / 80%)};
+  --shodow-drop-40: #{rgb(0 0 0 / 80%)};
+}
