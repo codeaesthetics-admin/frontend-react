@@ -1,11 +1,9 @@
-import './App.scss';
-import Login from './Login';
+import AppRoute from './routes/AppRoutes';
 
-function App() {
+
+function App() {    
   return (
-    <div className="App">
-      <Login />
-    </div>
+      <AppRoute />
   );
 }
 
