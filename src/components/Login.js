@@ -9,7 +9,7 @@ export default function Login() {
             <div className="container h-100">
                 <div className='row h-100 align-items-center'>
                     <div className="col-lg-5 loginimg">
-                        <Link to="/audio">Audio</Link>
+                        <Link to="/audio" className='btn btn-primary'>Audio</Link>
                         <img src={LoginImg} alt='' />
                     </div>
                     <div className='col-lg-7'>
