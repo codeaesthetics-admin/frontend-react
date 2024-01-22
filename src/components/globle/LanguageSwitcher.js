@@ -10,7 +10,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className='pt-4 d-flex justify-content-end'>
+    <div className='mt-4 d-flex justify-content-end'>
       <button className='btn btn-primary me-3' onClick={() => changeLanguage('en')}>English</button>
       <button className='btn btn-primary' onClick={() => changeLanguage('ur')}>اردو</button>
     </div>

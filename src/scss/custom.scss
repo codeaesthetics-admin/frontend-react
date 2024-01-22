@@ -5,7 +5,7 @@
   box-shadow: 0 10px 25px rgb(10 75 90);
   width: 100%;
   max-width: 450px;
-  button {
+  button.btn {
     width: 100%;
     padding: 15px;
     border: none;
@@ -20,6 +20,9 @@
     align-items: center;
     &:hover {
       background-color: #405d7d;
+    }
+    &:focus{
+      color: #fff!important;
     }
   }
 }
@@ -116,9 +119,9 @@
   margin-bottom: 20px;
   span {
     display: inline-block;
-    width: 40px;
+    width: 140px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 8px;
     line-height: 36px;
     text-align: center;
     transition: background-color 0.3s ease;
@@ -129,15 +132,8 @@
   background-color: #DB4437;
   color: white;
   svg{
-    font-size: 24px;
-  }
-}
-
-.fa-facebook {
-  background-color: #4267B2;
-  color: white;
-  svg{
-    font-size: 24px;
+    font-size: 20px;
+    margin-right: 10px;
   }
 }
 
@@ -145,7 +141,8 @@
   background-color: #ddd;
   color: #000;
   svg{
-    font-size: 24px;
+    font-size: 20px;
+    margin-right: 10px;
   }
 }
 .loginimg{
