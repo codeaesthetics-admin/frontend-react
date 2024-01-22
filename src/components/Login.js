@@ -13,7 +13,7 @@ export default function Login({ handleLogin }) {
         e.preventDefault();
         // Add your authentication logic here
         // For simplicity, let's assume a hardcoded username and password
-        if (username === 'rizwan' && password === 'khalid') {
+        if (username === 'user' && password === 'password') {
             handleLogin();
         } else {
             alert('Invalid username or password');
